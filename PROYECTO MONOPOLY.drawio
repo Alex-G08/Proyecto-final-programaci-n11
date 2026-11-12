@@ -1,0 +1,372 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="_wBY3jynTAc5MnhQjZTZ">
+    <mxGraphModel dx="2569" dy="1717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="n2" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontSize=23;fontStyle=1;" value="PROGRAMA PRINCIPAL MONOPOLY REDUCIDO · 20 CASILLAS Registrar participantes → gestionar partida → resolver turnos [PARCIAL] Solo está programado el inicio (PDF, pp. 5–6)" vertex="1">
+          <mxGeometry height="130" width="820" x="775" y="90" as="geometry" />
+        </mxCell>
+        <mxCell id="n3" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#ffffff;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;" value="DISEÑO DESCENDENTE (TOP-DOWN) · Descomposición en subproblemas, según el esquema del profesor" vertex="1">
+          <mxGeometry height="45" width="1570" x="400" y="20" as="geometry" />
+        </mxCell>
+        <mxCell id="n4" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontSize=18;" value="ESTADOS: [I] Implementado en el código · [P] Planificado en las reglas · [R] Revisar / resolver Los bloques son subproblemas propuestos; el PDF no define funciones para ellos." vertex="1">
+          <mxGeometry height="65" width="1430" x="470" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="n5" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dcfce7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;" value="1 · INICIALIZAR PARTIDA [I] Código pp. 5–6" vertex="1">
+          <mxGeometry height="85" width="300" x="30" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#64748b;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="n5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n7" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dcfce7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="1.1 · Mostrar instrucciones [I] Se imprimen las reglas generales. Mostrar un texto no implementa la mecánica." vertex="1">
+          <mxGeometry height="145" width="300" x="30" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="n5" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n7">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="18" y="422" />
+              <mxPoint x="18" y="582" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n9" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dcfce7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="1.2 · Registrar participantes [I] Leer número de jugadores. Validar entre 2 y 4 con while. Pedir y guardar nombres." vertex="1">
+          <mxGeometry height="145" width="300" x="30" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="n5" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n9">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="18" y="422" />
+              <mxPoint x="18" y="752" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n11" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dcfce7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="1.3 · Preparar estado inicial [I] Listas nombres y saldo. 500 € por jugador. posiciones = [1] × jugadores." vertex="1">
+          <mxGeometry height="145" width="300" x="30" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="n5" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="18" y="422" />
+              <mxPoint x="18" y="922" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n13" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dcfce7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="1.4 · Mostrar estado inicial [I] Imprimir nombres y saldos. Anunciar comienzo y posiciones. Aquí termina el código aportado." vertex="1">
+          <mxGeometry height="145" width="300" x="30" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="n5" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n13">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="18" y="422" />
+              <mxPoint x="18" y="1092" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n15" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;" value="2 · DEFINIR TABLERO [P] Reglas pp. 1–4" vertex="1">
+          <mxGeometry height="85" width="300" x="365" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#64748b;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="n15">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n17" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="2.1 · Modelar 20 casillas [P] Número, tipo y efecto. Para comprables: precio, dueño, grupo, edificios y alquileres." vertex="1">
+          <mxGeometry height="145" width="300" x="365" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="n15" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n17">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="353" y="422" />
+              <mxPoint x="353" y="582" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n19" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="2.2 · Países / propiedades [P] 2 Madrid · 3 Roma · 7 Wellington 8 Camberra · 10 Pretoria (lujo) 12 Washington DC · 14 Ottawa 15 Bloemfontein (lujo) 18 Tokyo · 19 Pekín." vertex="1">
+          <mxGeometry height="145" width="300" x="365" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="n15" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n19">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="353" y="422" />
+              <mxPoint x="353" y="752" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n21" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="2.3 · Otros tipos [P] 6 paneles solares · 13 aerogeneradores. Especiales: 1, 4, 5, 9, 11, 16, 17 y 20. Cargar importes de tablas (p. 3)." vertex="1">
+          <mxGeometry height="145" width="300" x="365" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="e22" edge="1" parent="1" source="n15" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n21">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="353" y="422" />
+              <mxPoint x="353" y="922" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n23" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fee2e2;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="2.4 · Grupos para construir [R] La regla exige «las 2 capitales de cada país». Falta definir explícitamente las parejas en el tablero; no inferirlas." vertex="1">
+          <mxGeometry height="145" width="300" x="365" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="e24" edge="1" parent="1" source="n15" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n23">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="353" y="422" />
+              <mxPoint x="353" y="1092" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n25" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;" value="3 · GESTIONAR TURNO Y MOVIMIENTO [P]" vertex="1">
+          <mxGeometry height="85" width="300" x="700" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="e26" edge="1" parent="1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#64748b;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="n25">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n27" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="3.1 · Seleccionar jugador [P] Repetir turnos de la partida. Si debe turno de cárcel, omitir turno completo: ni dados ni construcción." vertex="1">
+          <mxGeometry height="145" width="300" x="700" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="e28" edge="1" parent="1" source="n25" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n27">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="688" y="422" />
+              <mxPoint x="688" y="582" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n29" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="3.2 · Tirar y avanzar [P] Obtener resultado del dado. Actualizar posición de forma circular en las 20 casillas. Resolver la casilla de destino." vertex="1">
+          <mxGeometry height="145" width="300" x="700" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e30" edge="1" parent="1" source="n25" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n29">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="688" y="422" />
+              <mxPoint x="688" y="752" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n31" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="3.3 · Cobrar salidas [P] 1: +100 € · 20: +200 €. Al pasar o caer avanzando: una vez por cada salida. 19 → 2 cruza ambas: +300 €. No cobrar al inicio ni al retroceder." vertex="1">
+          <mxGeometry height="145" width="300" x="700" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="e32" edge="1" parent="1" source="n25" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n31">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="688" y="422" />
+              <mxPoint x="688" y="922" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n33" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fee2e2;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="3.4 · Continuar / terminar [R] Actualizar y mostrar el estado. Falta concretar fin de partida, ganador y tratamiento de insolvencia. No aparecen implementados." vertex="1">
+          <mxGeometry height="145" width="300" x="700" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="e34" edge="1" parent="1" source="n25" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n33">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="688" y="422" />
+              <mxPoint x="688" y="1092" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n35" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;" value="4 · PROPIEDADES Y ALQUILERES [P]" vertex="1">
+          <mxGeometry height="85" width="300" x="1035" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="e36" edge="1" parent="1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#64748b;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="n35">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n37" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="4.1 · Resolver propiedad [P] Sin dueño: ofrecer compra al banco. Si no compra, queda libre. Propia: no pagar. Ajena: pagar al propietario." vertex="1">
+          <mxGeometry height="145" width="300" x="1035" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="e38" edge="1" parent="1" source="n35" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n37">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1023" y="422" />
+              <mxPoint x="1023" y="582" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n39" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="4.2 · Registrar compra [P] Aplicar precio de la tabla (60–240 €). Descontar saldo y asignar dueño. Comprobar fondos: detalle por definir." vertex="1">
+          <mxGeometry height="145" width="300" x="1035" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e40" edge="1" parent="1" source="n35" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n39">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1023" y="422" />
+              <mxPoint x="1023" y="752" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n41" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="4.3 · Calcular alquiler [P] Según país y edificios (tabla p. 3). Sin edificios + grupo completo: doble del alquiler base. Solo al caer; pasar no genera alquiler." vertex="1">
+          <mxGeometry height="145" width="300" x="1035" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="e42" edge="1" parent="1" source="n35" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n41">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1023" y="422" />
+              <mxPoint x="1023" y="922" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n43" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="4.4 · Actualizar saldos [P] Restar al visitante y sumar al dueño. El código aún no gestiona compras, dueños, grupos ni pagos." vertex="1">
+          <mxGeometry height="145" width="300" x="1035" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="e44" edge="1" parent="1" source="n35" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n43">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1023" y="422" />
+              <mxPoint x="1023" y="1092" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n45" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;" value="5 · CONSTRUIR CASAS Y HOTEL [P/R]" vertex="1">
+          <mxGeometry height="85" width="300" x="1370" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="e46" edge="1" parent="1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#64748b;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="n45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n47" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="5.1 · Verificar requisitos [P] Solo propiedades de países. Poseer las 2 capitales requeridas. No construir durante turno perdido. Sin edificios en compañías/especiales." vertex="1">
+          <mxGeometry height="145" width="300" x="1370" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="e48" edge="1" parent="1" source="n45" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n47">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1358" y="422" />
+              <mxPoint x="1358" y="582" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n49" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="5.2 · Comprar casas [P] 100 € por casa. Actualizar saldo y edificios. Alquiler según tabla." vertex="1">
+          <mxGeometry height="145" width="300" x="1370" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e50" edge="1" parent="1" source="n45" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n49">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1358" y="422" />
+              <mxPoint x="1358" y="752" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n51" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fee2e2;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="5.3 · RESOLVER LÍMITE [R] P. 2 y tabla p. 3: máximo 3 casas. P. 4: máximo 4 casas. No elegir una regla sin acordarla." vertex="1">
+          <mxGeometry height="145" width="300" x="1370" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="e52" edge="1" parent="1" source="n45" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n51">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1358" y="422" />
+              <mxPoint x="1358" y="922" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n53" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fee2e2;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="5.4 · Comprar hotel [R] Máximo 1; coste adicional 200 €. P. 2: directo por 500 € (3 casas). P. 4: devolver 4 casas. Fijar conversión y coste tras resolver 5.3." vertex="1">
+          <mxGeometry height="145" width="300" x="1370" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="e54" edge="1" parent="1" source="n45" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n53">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1358" y="422" />
+              <mxPoint x="1358" y="1092" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n55" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;" value="6 · COMPAÑÍAS RENOVABLES [P]" vertex="1">
+          <mxGeometry height="85" width="300" x="1705" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="e56" edge="1" parent="1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#64748b;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="n55">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n57" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="6.1 · Identificar compañía [P] Casilla 6: paneles solares. Casilla 13: aerogeneradores. Forman pareja." vertex="1">
+          <mxGeometry height="145" width="300" x="1705" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="e58" edge="1" parent="1" source="n55" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n57">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1693" y="422" />
+              <mxPoint x="1693" y="582" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n59" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="6.2 · Comprar [P] 150 € por compañía. Guardar propietario y descontar saldo. No admiten casas ni hoteles." vertex="1">
+          <mxGeometry height="145" width="300" x="1705" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e60" edge="1" parent="1" source="n55" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n59">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1693" y="422" />
+              <mxPoint x="1693" y="752" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n61" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="6.3 · Calcular pago [P] Si es de otro jugador: 4 × dado utilizado para llegar. 10 × ese dado si el mismo dueño posee ambas compañías." vertex="1">
+          <mxGeometry height="145" width="300" x="1705" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="e62" edge="1" parent="1" source="n55" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n61">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1693" y="422" />
+              <mxPoint x="1693" y="922" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n63" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="6.4 · Usar el dado correcto [P] Si se llega por retroceso, usar el dado del retroceso. Transferir el importe al dueño." vertex="1">
+          <mxGeometry height="145" width="300" x="1705" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="e64" edge="1" parent="1" source="n55" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n63">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1693" y="422" />
+              <mxPoint x="1693" y="1092" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n65" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;" value="7 · CASILLAS ESPECIALES [P]" vertex="1">
+          <mxGeometry height="85" width="300" x="2040" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="e66" edge="1" parent="1" source="n2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=none;strokeColor=#64748b;strokeWidth=2;exitX=0.5;exitY=1;entryX=0.5;entryY=0;" target="n65">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="n67" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="7.1 · Impuestos y banco [P] 4: pagar 40 € al banco. 9: pagar 60 € al banco. 17: recibir 50 € del banco." vertex="1">
+          <mxGeometry height="145" width="300" x="2040" y="510" as="geometry" />
+        </mxCell>
+        <mxCell id="e68" edge="1" parent="1" source="n65" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n67">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2028" y="422" />
+              <mxPoint x="2028" y="582" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n69" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="7.2 · Cárcel y robo [P] 5: perder siguiente turno completo; después jugar desde 5. Sin multa; seguir cobrando alquileres. 11: recibir 25 € de cada rival que pueda pagar." vertex="1">
+          <mxGeometry height="145" width="300" x="2040" y="680" as="geometry" />
+        </mxCell>
+        <mxCell id="e70" edge="1" parent="1" source="n65" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n69">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2028" y="422" />
+              <mxPoint x="2028" y="752" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n71" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fef3c7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="7.3 · Retroceder [P] 16: tirar un dado nuevo y retroceder ese número. Aplicar efecto del destino. No cobrar salidas. Para compañías, usar este dado." vertex="1">
+          <mxGeometry height="145" width="300" x="2040" y="850" as="geometry" />
+        </mxCell>
+        <mxCell id="e72" edge="1" parent="1" source="n65" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n71">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2028" y="422" />
+              <mxPoint x="2028" y="922" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n73" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#fee2e2;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;" value="7.4 · Textos por actualizar [R] Código p. 5 anuncia «Avanza» y hotel que cobra 30 € al pasar. No coinciden con reglas detalladas. También omite la salida de 200 €. Son mensajes, no lógica implementada." vertex="1">
+          <mxGeometry height="145" width="300" x="2040" y="1020" as="geometry" />
+        </mxCell>
+        <mxCell id="e74" edge="1" parent="1" source="n65" style="edgeStyle=orthogonalEdgeStyle;endArrow=none;strokeColor=#94a3b8;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" target="n73">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="2028" y="422" />
+              <mxPoint x="2028" y="1092" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="n75" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontSize=18;" value="FUENTE: «IDEA PARA EL PROYECTO DE CCyP.pdf», 6 páginas. Reglas: pp. 1–4 · Código: pp. 5–6. El código valida jugadores e inicializa nombres, saldos y posiciones; las mecánicas restantes son trabajo pendiente. Los conectores expresan descomposición, no flujo de ejecución." vertex="1">
+          <mxGeometry height="75" width="1930" x="220" y="1220" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
