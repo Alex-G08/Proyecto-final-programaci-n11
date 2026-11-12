@@ -1,17 +1,14 @@
 <mxfile host="app.diagrams.net">
   <diagram name="Page-1" id="_wBY3jynTAc5MnhQjZTZ">
-    <mxGraphModel dx="2569" dy="1717" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="2397" dy="1803" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="n2" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontSize=23;fontStyle=1;" value="PROGRAMA PRINCIPAL MONOPOLY REDUCIDO · 20 CASILLAS Registrar participantes → gestionar partida → resolver turnos [PARCIAL] Solo está programado el inicio (PDF, pp. 5–6)" vertex="1">
+        <mxCell id="n2" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dbeafe;strokeColor=#2563eb;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontSize=23;fontStyle=1;" value="PROGRAMA PRINCIPAL MONOPOLY REDUCIDO · 20 CASILLAS Registrar participantes → gestionar partida → resolver turnos [PARCIAL] " vertex="1">
           <mxGeometry height="130" width="820" x="775" y="90" as="geometry" />
         </mxCell>
-        <mxCell id="n3" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#ffffff;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;" value="DISEÑO DESCENDENTE (TOP-DOWN) · Descomposición en subproblemas, según el esquema del profesor" vertex="1">
+        <mxCell id="n3" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#ffffff;strokeColor=#ffffff;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontSize=22;fontStyle=1;" value="DISEÑO DESCENDENTE (TOP-DOWN) " vertex="1">
           <mxGeometry height="45" width="1570" x="400" y="20" as="geometry" />
-        </mxCell>
-        <mxCell id="n4" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontSize=18;" value="ESTADOS: [I] Implementado en el código · [P] Planificado en las reglas · [R] Revisar / resolver Los bloques son subproblemas propuestos; el PDF no define funciones para ellos." vertex="1">
-          <mxGeometry height="65" width="1430" x="470" y="250" as="geometry" />
         </mxCell>
         <mxCell id="n5" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#dcfce7;strokeColor=#64748b;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontStyle=1;fontSize=20;" value="1 · INICIALIZAR PARTIDA [I] Código pp. 5–6" vertex="1">
           <mxGeometry height="85" width="300" x="30" y="380" as="geometry" />
@@ -362,9 +359,6 @@
               <mxPoint x="2028" y="1092" />
             </Array>
           </mxGeometry>
-        </mxCell>
-        <mxCell id="n75" parent="1" style="rounded=1;whiteSpace=wrap;html=0;fillColor=#f1f5f9;strokeColor=#cbd5e1;fontColor=#172033;fontSize=17;spacing=12;align=center;verticalAlign=middle;fontSize=18;" value="FUENTE: «IDEA PARA EL PROYECTO DE CCyP.pdf», 6 páginas. Reglas: pp. 1–4 · Código: pp. 5–6. El código valida jugadores e inicializa nombres, saldos y posiciones; las mecánicas restantes son trabajo pendiente. Los conectores expresan descomposición, no flujo de ejecución." vertex="1">
-          <mxGeometry height="75" width="1930" x="220" y="1220" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
