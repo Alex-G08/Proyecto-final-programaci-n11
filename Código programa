@@ -95,7 +95,7 @@ for i in range(jugadores):
 
 
 
-def mostrar_dado(numero):
+def tirar_dado(numero):
     if numero == 1:
         print("┌─────┐")
         print("│     │")
@@ -151,4 +151,4 @@ dado = random.randint(1, 6)
 
 
 print("Ha salido:")
-mostrar_dado(dado)
+tirar_dado(dado)
