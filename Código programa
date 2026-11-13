@@ -1,0 +1,154 @@
+# PROYECTO FINAL DEL MONOPOLI
+# Realizado por: Alex Gude, Adrián Seijas, Martín Prieto, Nina Hong Bermúdez, Mateo Abelleira
+
+
+import random
+
+
+# Inicio
+print("\t ***INSTRUCCIONES***")
+print(" Es una versión reducida del monopoli original")
+print(" Pueden jugar de 2 a 4 jugadores")
+print(" El total de casillas es de 20")
+print(" Cada jugador empieza con 500€ de saldo")
+print(" Al pasar por la salida recibes 100€")
+print(" Puedes comprar propiedades cuando caigas en ellas")
+print(" Si otro jugador cae en tu propiedad te tiene que pagar el alquiler")
+print("\n\t ***TIPOS DE CASILLAS***")
+print(" Propiedades:  Se pueden comprar")
+print("Paneles solares: Se puede comprar (A la par con aerogeneradores)")
+print(" Impuestos:  Pagas dinero")
+print(" Cárcel:  Pierdes un turno")
+print(" Retrocede y Avanza:  Te hace retroceder o avanzar lo que te toque al tirar el dado")
+print("Aerogeneradores: Se puede comprar (A la par con paneles solares)")
+print(" Propiedad de lujo:  Propiedad pero más cara y de calidad")
+print(" Robo:  Tomas 25€ de cada jugador")
+print(" Hotel:  Se puede comprar y cada jugador que pase por esta tiene que pagar 30€ por pasar el turno")
+print(" Banco:  Recibes 50€ por un ingreso inesperado")
+
+
+
+
+
+
+
+
+print("\n\t ***INICIO DEL PROGRAMA***")
+jugadores=int(input("Inserte el número de jugadores: "))
+while jugadores<2 or jugadores>4:
+    print("No se puede jugador con ", jugadores, "jugador(es)")
+    jugadores=int(input("Vuelva a insertar el número de jugadores: "))
+
+
+
+
+nombres=[]
+saldo=[]
+
+
+
+
+for i in range(jugadores):
+    nombre=input(f"Nombre del jugador {i+1}: ")
+    nombres.append(nombre)
+    saldo.append(500)
+
+
+
+
+print("\t ***JUGADORES REGISTRADOS***")
+
+
+
+
+for i in range(jugadores):
+    print(f"{nombres[i]} : {saldo[i]}€")
+
+
+
+
+print("\t QUE COMIENCE LA PARTIDA!")
+
+
+fichas = ["Coche", "Sombrero", "Perro", "Barco"]
+fichas_asignadas = []
+
+
+for i in range(jugadores):
+    numero_ficha = random.randint(0, len(fichas) - 1)
+    ficha = fichas.pop(numero_ficha)
+    fichas_asignadas.append(ficha)
+
+
+for i in range(jugadores):
+    print(f"{nombres[i]} ({fichas_asignadas[i]}) : {saldo[i]}€")
+
+
+
+
+posiciones= [1]*jugadores
+
+
+for i in range(jugadores):
+    print(f"{nombres[i]} está en la casilla {posiciones[i]}")
+
+
+
+
+def mostrar_dado(numero):
+    if numero == 1:
+        print("┌─────┐")
+        print("│     │")
+        print("│  ●  │")
+        print("│     │")
+        print("└─────┘")
+
+
+    elif numero == 2:
+        print("┌─────┐")
+        print("│●    │")
+        print("│     │")
+        print("│    ●│")
+        print("└─────┘")
+
+
+    elif numero == 3:
+        print("┌─────┐")
+        print("│●    │")
+        print("│  ●  │")
+        print("│    ●│")
+        print("└─────┘")
+
+
+    elif numero == 4:
+        print("┌─────┐")
+        print("│●   ●│")
+        print("│     │")
+        print("│●   ●│")
+        print("└─────┘")
+
+
+    elif numero == 5:
+        print("┌─────┐")
+        print("│●   ●│")
+        print("│  ●  │")
+        print("│●   ●│")
+        print("└─────┘")
+
+
+    elif numero == 6:
+        print("┌─────┐")
+        print("│●   ●│")
+        print("│●   ●│")
+        print("│●   ●│")
+        print("└─────┘")
+
+
+input("Pulsa ENTER para tirar el dado...")
+
+
+dado = random.randint(1, 6)
+
+
+print("Ha salido:")
+mostrar_dado(dado)
