@@ -264,4 +264,10 @@ while True:
 
                 print(f"Pagas 12€ a {nombres[propietario[8]]}")
 
+        # CASILLA 9
+        elif posiciones[i] == 9:
+            print("IMPUESTOS")
+            print("Toca pagar 60€")
+            saldo[i] -= 60
+
         print(f"Saldo actual: {saldo[i]}€")
