@@ -244,4 +244,24 @@ while True:
 
                 print(f"Pagas 10€ a {nombres[propietario[7]]}")
 
+        # CASILLA 8
+        elif posiciones[i] == 8:
+            print("PROPIEDAD - CAMBERRA")
+
+            if propietario[8] is None:
+
+                respuesta = input("¿Quieres comprarla por 120€? (s/n): ")
+
+                if respuesta.lower() == "s" and saldo[i] >= 120:
+                    saldo[i] -= 120
+                    propietario[8] = i
+                    print("Propiedad comprada")
+
+            elif propietario[8] != i:
+
+                saldo[i] -= 12
+                saldo[propietario[8]] += 12
+
+                print(f"Pagas 12€ a {nombres[propietario[8]]}")
+
         print(f"Saldo actual: {saldo[i]}€")
