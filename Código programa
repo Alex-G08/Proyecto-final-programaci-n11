@@ -291,3 +291,101 @@ while True:
                 print(f"Pagas 14€ a {nombres[propietario[10]]}")
 
         print(f"Saldo actual: {saldo[i]}€")
+
+        # CASILLA 11
+        elif posiciones [i] == 11
+            print("ROBO")
+            print("Robas 25€ a cada jugador")
+            for j in range(jugadores)
+                if j !=i:
+                    if saldo[j] >= 25:
+                        saldo[j] -= 25
+                        saldo[i] += 25
+                else:
+                    saldo[i] += saldo[j]
+                    saldo[j] = 0
+            print(f"{nombres^[i]} ha robado 25€ a cada rival")
+        
+        # CASILLA 12   
+        elif posiciones[i] == 12:
+            print("PROPIEDAD - WASHINGTON DC")
+
+            if propietario[12] is None:
+
+            respuesta = input("Quieres comprarla por 160€? (s/n): ")
+
+            if respuesta.lower() == "s" and saldo[i] >= 160:
+                saldo[i] -= 160
+                propietario[12] = i
+                print("Propiedad comprada")
+
+            elif propietario[12] != i:
+
+                saldo[i] -= 16
+                saldo[propietario[12]] += 16
+
+                print(f"Pagas 16€ a {nombres[propietario[12]]}")
+
+        # CASILLA 13
+        elif posiciones[i] == 13:
+            print("AEROGENERADORES")  
+
+            if propietario[13] is None:
+
+                respuesta = input("¿Quieres comprarla por 150€ (s/n): ")
+
+                if respuesta.lower() == "s" and saldo[i] >= 150:
+                    saldo[i] -= 150
+                    propietari[13] = i
+                    print("Aerogeneradores comprados")
+
+            elif propietario[13] != i:
+
+                alquiler = 4 * dado
+                if propietario[6] == propietario[13]:
+                    alquiler = 10 * dado
+
+                saldo[i] -= alquiler
+                saldo[propietario[13]] += alquiler
+
+                print(f"Pagas {alquiler} a {nombres[propietario[13]]}")
+
+        # CASILLA 14
+        elif posiciones[i] == 14:
+            print("PROPIEDAD - OTTAWA")
+
+            if propietario[14] is None:
+
+                respuesta = input("Quieres comprarla por 180€? (s/n): ")
+
+                if respuesta.lower() == "s" and saldo[i] >= 180:
+                    saldo[i] -= 180
+                    propietario[14] = i
+                    print("Propiedad comprada")
+
+            elif propietario[14] != i:
+
+                saldo[i] -= 18
+                saldo[propietario[12]] += 18
+
+                print(f"Pagas 18€ a {nombres[propietario[14]]}")
+
+       # CASILLA 15
+        elif posiciones[i] == 15:
+            print("PROPIEDAD DE LUJO - BLOEMFONTEIN)
+
+            if propietario[15] is None:
+
+            respuesta = input("Quieres comprarla por 200€? (s/n): ")
+
+            if respuesta.lower() == "s" and saldo[i] >= 200:
+                saldo[i] -= 200
+                propietario[15] = i
+                print("Propiedad comprada")
+
+            elif propietario[15] != i:
+
+                saldo[i] -= 20
+                saldo[propietario[12]] += 20
+
+                print(f"Pagas 20€ a {nombres[propietario[20]]}")
