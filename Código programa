@@ -389,3 +389,64 @@ while True:
                 saldo[propietario[12]] += 20
 
                 print(f"Pagas 20€ a {nombres[propietario[20]]}")
+# CASILLA 16
+        elif posiciones[i] == 16:
+            print("RETROCEDE")
+            dado_retroceso = random.randint(1, 6)
+            print("Tiras el dado para retroceder. Ha salido:")
+            tirar_dado(dado_retroceso)
+
+            posiciones[i] -= dado_retroceso
+            print(f"{nombres[i]} retrocede {dado_retroceso} casillas hasta la casilla {posiciones[i]}")
+# CASILLA 17
+        elif posiciones[i] == 17:
+            print("BANCO")
+            print("Recibes 50€ por un ingreso inesperado")
+            saldo[i] += 50
+# CASILLA 18
+        elif posiciones[i] == 18:
+            print("PROPIEDAD - TOKYO")
+
+            if propietario[18] is None:
+                respuesta = input("¿Quieres comprarla por 220€? (s/n): ")
+
+                if respuesta.lower() == "s" and saldo[i] >= 220:
+                    saldo[i] -= 220
+                    propietario[18] = i
+                    print("Propiedad comprada")
+
+            elif propietario[18] != i:
+                alquiler = 22
+                if propietario[19] == propietario[18]:
+                    alquiler = 44
+
+                saldo[i] -= alquiler
+                saldo[propietario[18]] += alquiler
+
+                print(f"Pagas {alquiler}€ a {nombres[propietario[18]]}")
+# CASILLA 19
+        elif posiciones[i] == 19:
+            print("PROPIEDAD - PEKÍN")
+
+            if propietario[19] is None:
+                respuesta = input("¿Quieres comprarla por 240€? (s/n): ")
+
+                if respuesta.lower() == "s" and saldo[i] >= 240:
+                    saldo[i] -= 240
+                    propietario[19] = i
+                    print("Propiedad comprada")
+
+            elif propietario[19] != i:
+                alquiler = 24
+                if propietario[18] == propietario[19]:
+                    alquiler = 48
+
+                saldo[i] -= alquiler
+                saldo[propietario[19]] += alquiler
+
+                print(f"Pagas {alquiler}€ a {nombres[propietario[19]]}")
+# CASILLA 20
+        elif posiciones[i] == 20:
+            print("SALIDA (200€)")
+            saldo[i] += 200
+            print(f"{nombres[i]} recibe 200€ por llegar a la salida 20")
