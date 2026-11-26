@@ -647,8 +647,6 @@ while True:
 
         break
 
-
-    # APARTADO PARA LA SESIÓN 13 (ANULAR EL BUCLE INFINITO)
     jugadores_activos = 0
     ganador = ""
 
